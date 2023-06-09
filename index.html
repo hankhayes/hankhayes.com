@@ -1,4 +1,47 @@
 <!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <!--This is the code for the "hamburger menu" button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--This is the link to the home page - you can leave this as is -->
+            <a asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+
+            <!--everything in this section will collapse when the screen is small -->
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a asp-controller="Home" asp-action="About" class="nav-link"><span class="fas fa-user"></span>&nbsp;About Me</a></li>
+                    <li class="nav-item"><a asp-controller="Home" asp-action="Personal" class="nav-link"><span class="fas fa-user"></span>&nbsp;Interests</a></li>
+                    <li class="nav-item"><a asp-controller="Home" asp-action="Resume" class="nav-link"><span class="fas fa-user"></span>&nbsp;Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="container">
+        @RenderBody()
+    </div> -->
+
+    <!-- <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    @RenderSection("Scripts", required: false) -->
+    
+</body>
+</html>
+
+
 <link rel="stylesheet" href="bootstrap.css">
 <br />
 <h1 class="text-left pd-5">Hello there!</h1>
@@ -47,7 +90,7 @@
             <td>Principles of Marketing</td>
             <td>Herb Miller</td>
         </tr>
-    </table>*@
+    </table>
 
 <br />
 
