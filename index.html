@@ -15,29 +15,23 @@
             </button>
 
             <!--This is the link to the home page - you can leave this as is -->
-            <a asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+            <a href="index.html" class="navbar-brand">Home</a>
 
             <!--everything in this section will collapse when the screen is small -->
             <div class="collapse navbar-collapse" id="nav-content">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a asp-controller="Home" asp-action="About" class="nav-link"><span class="fas fa-user"></span>&nbsp;About Me</a></li>
-                    <li class="nav-item"><a asp-controller="Home" asp-action="Personal" class="nav-link"><span class="fas fa-user"></span>&nbsp;Interests</a></li>
-                    <li class="nav-item"><a asp-controller="Home" asp-action="Resume" class="nav-link"><span class="fas fa-user"></span>&nbsp;Resume</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;About</a></li>
+                    <li class="nav-item"><a href="interests.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Interests</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Resume</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- <div class="container">
-        @RenderBody()
-    </div> -->
-
-    <!-- <script src="~/lib/jquery/jquery.js"></script>
-    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    @RenderSection("Scripts", required: false) -->
-    
+    <script src="wwwroot/lib/jquery/jquery.js"></script>
+    <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>
 
@@ -53,7 +47,7 @@
 <br />
 
 <div class="align-self-sm-center">
-    <img class="img-fluid w-35" src="headshot.jpg" alt="Hank's professional headshot with the UT tower in the distance" />
+    <img class="img-fluid w-35" src="images/headshot.jpg" alt="Hank's professional headshot with the UT tower in the distance" />
 </div>
 
 <br />
