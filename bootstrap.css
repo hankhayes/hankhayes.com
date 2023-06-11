@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/*!
- * Bootswatch v5.2.3 (https://bootswatch.com)
- * Theme: simplex
- * Copyright 2012-2022 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
   --bs-blue: #007bff;
@@ -105,6 +92,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
 }
 
 hr {
@@ -596,13 +586,13 @@ progress {
 }
 
 .blockquote-footer {
-  margin-top: -1rem;
+  margin-top: auto;
   margin-bottom: 1rem;
   font-size: 0.875em;
   color: #777;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "—----";
 }
 
 .img-fluid {
@@ -10998,4 +10988,15 @@ textarea.form-control-lg {
 
 .badge.bg-secondary, .badge.bg-light {
   color: #373a3c;
+}
+
+footer {
+    margin-top:auto;
+    font-size: 0.875em;
+    color: #777;
+}
+
+read-more {
+    font-size: 0.875em;
+    color: #777;
 }
