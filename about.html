@@ -5,25 +5,31 @@
     <link href="bootstrap.css" rel="stylesheet" />
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
+            <!--This is the code for the "Home" button-->
+            <a class="navbar-brand" href="index.html">Hank Hayes</a>
 
             <!--This is the code for the "hamburger menu" button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--This is the link to the home page - you can leave this as is -->
-            <a href="index.html" class="navbar-brand">Home</a>
-
-            <!--everything in this section will collapse when the screen is small -->
-            <div class="collapse navbar-collapse" id="nav-content">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="about.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;About</a></li>
-                    <li class="nav-item"><a href="interests.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Interests</a></li>
-                    <li class="nav-item"><a href="now.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Now</a></li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Resume</a></li>
+            <!--This is the code for the other links that will collapse-->
+            <div class="navbar-collapse collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="now.html">Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -32,7 +38,7 @@
     <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
     <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
     <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-</body>
+</header>
 
 <div class="container">
     <br />
@@ -73,43 +79,15 @@
     <p>Web Application Development</p>
     <p>Game Development</p>
     <p>Technical Dimensions of Cybersecurity</p>
-
-    <br />
- 
-    <h1>3 big parts of my personality</h1>
-
-    <br />
-
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="~/images/elpaso.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">El Paso</h5>
-                        <p class="card-text">I was born and raised in El Paso. It's a very tight-knit community. There isn't a ton to do there but I'll always enjoy going back.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="~/images/mis.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">MIS</h5>
-                        <p class="card-text">I love technology and make it a big part of everything I do. I'm incredibly passionate about my major for this reason.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="~/images/space.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Curiousity</h5>
-                        <p class="card-text">I love learning knew things, particularly by binge watching YouTube videos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br />
-    </div>
 </div>
+
+<footer>
+    <div class="container">
+        <hr>
+        <h5>Contact me</h5>
+        <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>
+        <br>
+        <a href="https://www.linkedin.com/in/hank-hayes/">LinkedIn</a>
+    </div>
+    <br>
+</footer>
