@@ -21,8 +21,7 @@
             <div class="navbar-collapse collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About
-                        </a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="now.html">Now</a>
@@ -34,23 +33,22 @@
             </div>
         </div>
     </nav>
-    <script src="wwwroot/lib/jquery/jquery.js"></script>
-    <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
-    <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    
+    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
     
     <div class="title-image">
         <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
         <div class="title-image-overlay"></div>
         <div class="text-container" id="mainTC">
-            <script src="isMobile.js"></script>
+            <script src="scripts/isMobileTC.js"></script>
             Hank Hayes
         </div>
     </div>
 </header>
 
 <body>
-    <div class="container">
+    <div class="container" id="mainContainer">
+        <script src="scripts/isMobileContainer.js"></script>
         <!--Personal-->
         <br>
         <h4>The person</h4>
@@ -66,7 +64,6 @@
         <p>An entrepreneur at heart, I'm co-directing the rebuild of the Longhorn Entrepreneurship Agency.</p>
 
         <!--read-more is a tag I added to bootstrap.css-->
-        <br>
         <p><read-more>Read more on the <a href="about.html">About</a> page</read-more></p>
         <hr>
 
@@ -106,7 +103,7 @@
 </body>
 
 <footer>
-    <div class="container">
+    <div class="container" id="mainContainer">
         <hr>
         <h5>Contact me</h5>
         <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>

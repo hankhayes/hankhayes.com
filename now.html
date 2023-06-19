@@ -42,17 +42,17 @@
     <div class="title-image">
         <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
         <div class="title-image-overlay"></div>
-        <div class="text-container">
-            Now
+        <div class="text-container" id="mainTC">
+            <script src="scripts/isMobileTC.js"></script>
+                Now
         </div>
     </div>
 </header>
 
 <body>
-    <div class="container">
-        <br />
-        <h1>Now</h1>
-        <p>Last updated: June 10, 2023</p>
+    <div class="container" id="mainContainer">
+        <script src="scripts/isMobileContainer.js"></script>
+        <p><read-more>Last updated: June 10, 2023</p></read-more>
 
         <h5>The University of Texas at Austin</h5>
         <p>I'm a full-time student entering the final year of my undergraduate degree</p>
@@ -74,8 +74,11 @@
     </div>
 </body>
 
+<br>
+<br>
+
 <footer>
-    <div class="container">
+    <div class="container" id="mainContainer">
         <p>Inspired by Derek Sivers and his <a href="https://sive.rs/nowff">/now page movement</a></p>
         <hr>
         <h5>Contact me</h5>
