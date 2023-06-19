@@ -651,7 +651,6 @@ progress {
     right: 16px;
 }
 
-.container,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -665,6 +664,15 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.8);
   margin-right: auto;
   margin-left: auto;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 3);
+    margin-right: auto;
 }
 
 .container-contact {
@@ -11040,3 +11048,12 @@ read-more {
     font-size: 0.875em;
     color: #777;
 }
+
+@keyframes textAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;  
+    }
+  }
