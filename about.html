@@ -34,55 +34,85 @@
             </div>
         </div>
     </nav>
-    <script src="wwwroot/lib/jquery/jquery.js"></script>
-    <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
-    <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
+
+    <div class="title-image">
+        <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
+        <div class="title-image-overlay"></div>
+        <div class="text-container" id="mainTC">
+            <script src="scripts/isMobileTC.js"></script>
+            Resume
+        </div>
+    </div>
 </header>
 
-<div class="container">
-    <br />
+<body>
+    <div class="container" id="mainContainer">
+        <script src="scripts/isMobileContainer.js"></script>
 
-    <h1>Professional experience</h1>
+        <!--Educaiton-->
+        <br>
+        <h1>Education</h1>
+        <br>
 
-    <br />
-    <h3>Campus Leader at Apple</h3>
-    <h5>May 2023 to Present in Austin, TX</h5>
+        <h4>The University of Texas at Austin</h4>
+        <h6>B.B.A. Management Information Systems, Elements of Computing Certificate</h6>
+        <p>Graduating May 2024</p>
 
-    <br />
-    <h3>Product Innovation Intern at LPL Financial</h3>
-    <h5>Summer 2023 in Austin, TX</h5>
+        <!--Experience-->
+        <br>
+        <h1>Professional experience</h1>
+        <br>
 
-    <br />
-    <h3>Project Management Intern at Dell Technologies</h3>
-    <h5>Summer 2022 in Austin, TX</h5>
-    <p>
-        In this role, I was tasked with analyzing the internal idea management process. I scheduled 1-on-1 meetings with as many stakeholders as I could to hear their take on idea management and get a feel for what their process was like. This involved gathering direct feedback from them, but also watching them interact with these tools to identify inefficient processes.
-        I found that there was an opportunity to migrate all of idea management to a single tool, which would greatly decrease the amount of communication needed to coordinate the current process across the many existing tools. This included an integration between the business side and IT, so that they too could be working on one platform.
-    </p>
+        <h4>Campus Leader at Apple</h4>
+        <h6>May 2023 to Present in Austin, TX</h6>
+        <p>This was a great experience</p>
 
-    <br />
-    <h3>Business Operations Intern at Floor Coverings International</h3>
-    <h5>Summer 2021 in El Paso, TX</h5>
-    <p>In this role, I was tasked with conducting market research to determine if FCI El Paso's pricing model was efficient. While researching, I recognized an opportunity to enter the commercial flooring market. Taking input from salespeople, customers, and my manager, I created an RFP bid proposal template, using Adobe Illustrator, that could be given to potential clients. Additionally, the final pricing model increased pricing efficiency by roughly 7%.</p>
+        <h4>Product Innovation Intern at LPL Financial</h4>
+        <h6>Summer 2023 in Austin, TX</h6>
+        <p>This was also a great experience</p>
 
-    <br />
-    <h1>Relevant coursework</h1>
-    <p>Elements of Computers/Programming</p>
-    <p>Intro to Information Technology Management</p>
-    <p>Leadership Challenges/Innovation</p>
-    <p>Intro to Data Science</p>
-    <p>Operations Management</p>
-    <p>Organizational Behavior</p>
-    <p>Data Science for Business Applications</p>
-    <p>Database Management</p>
-    <p>Web Application Development</p>
-    <p>Game Development</p>
-    <p>Technical Dimensions of Cybersecurity</p>
-</div>
+        <h4>Project Management Intern at Dell Technologies</h4>
+        <h6>Summer 2022 in Austin, TX</h6>
+        <p>
+            In this role, I was tasked with analyzing the internal idea management process. I scheduled 1-on-1 meetings with as many stakeholders as I could to hear their take on idea management and get a feel for what their process was like. This involved gathering direct feedback from them, but also watching them interact with these tools to identify inefficient processes.
+            I found that there was an opportunity to migrate all of idea management to a single tool, which would greatly decrease the amount of communication needed to coordinate the current process across the many existing tools. This included an integration between the business side and IT, so that they too could be working on one platform.
+        </p>
+
+        <h4>Business Operations Intern at Floor Coverings International</h4>
+        <h6>Summer 2021 in El Paso, TX</h6>
+        <p>In this role, I was tasked with conducting market research to determine if FCI El Paso's pricing model was efficient. While researching, I recognized an opportunity to enter the commercial flooring market. Taking input from salespeople, customers, and my manager, I created an RFP bid proposal template, using Adobe Illustrator, that could be given to potential clients. Additionally, the final pricing model increased pricing efficiency by roughly 7%.</p>
+
+        <!--Leadership and extracurriculars-->
+        <br>
+        <h1>Leadership experience and activities</h1>
+        <br>
+
+        <hp4>Phi Chi Theta, Delta Mu Chapter</hp4>
+        <read-more>Fall 2020 to Present</read-more>
+        <h6>Fall 2020 to Present</h6>
+
+
+        <br />
+        <h1>Relevant coursework</h1>
+        <p>Elements of Computers/Programming</p>
+        <p>Intro to Information Technology Management</p>
+        <p>Leadership Challenges/Innovation</p>
+        <p>Intro to Data Science</p>
+        <p>Operations Management</p>
+        <p>Organizational Behavior</p>
+        <p>Data Science for Business Applications</p>
+        <p>Database Management</p>
+        <p>Web Application Development</p>
+        <p>Game Development</p>
+        <p>Technical Dimensions of Cybersecurity</p>
+    </div>
+</body>
 
 <footer>
-    <div class="container">
+    <div class="container" id="mainContainer">
+        <script src="scrirpts/isMobileContainer.js"></script>
         <hr>
         <h5>Contact me</h5>
         <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>
