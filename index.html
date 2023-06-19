@@ -6,6 +6,7 @@
 </head>
 
 <header>
+    <!--This is the code for the navbar-->
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
             <!--This is the code for the "Home" button-->
@@ -37,18 +38,20 @@
     <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
     <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
     <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    
+    <div class="title-image">
+        <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
+        <div class="title-image-overlay"></div>
+        <div class="text-container">
+            Hank Hayes
+        </div>
+    </div>
 </header>
 
-<img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
-
 <body>
-    <script src="title_animation.js"></script>
-    <p id="animatedText" style="color: white;">Hank Hayes</p>
-
     <div class="container">
         <!--Personal-->
-        <p><h1>Hank Hayes</h1></p>
-
+        <br>
         <h4>The person</h4>
         <p>Originally from El Paso, TX I moved to Austin, TX in 2020 to attend UT Austin. I'm an avid piano player, podcast listener, basketball player, and tech enthusiast.</p>
 
@@ -62,8 +65,9 @@
         <p>An entrepreneur at heart, I'm co-directing the rebuild of the Longhorn Entrepreneurship Agency.</p>
 
         <!--read-more is a tag I added to bootstrap.css-->
-        <p><read-more>Read more on the <a href="about.html">About</a> page</read-more></p>
         <br>
+        <p><read-more>Read more on the <a href="about.html">About</a> page</read-more></p>
+        <hr>
 
         <!--Projects-->
         <p><h1>Projects</h1></p>
@@ -92,7 +96,10 @@
         <p>The Last Wizard is a game that I developed with two other students as part of the CS 329E Game Development course.</p>
 
         <p><read-more>Read more on the <a href="projects.html">Projects</a> page</read-more></p>
-        <br>
+        <hr>
+
+        <!--Now-->
+        <p><h1>Now</h1></p>
         <p>Check out the <a href="now.html">Now</a> page to see what I've been up to lately</p>
     </div>
 </body>
