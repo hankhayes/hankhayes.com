@@ -640,10 +640,8 @@ progress {
 .text-container {
     position: absolute;
     bottom: 10px;
-    left: 70px;
-    color: #fff;
-    font-size: 72px;
     opacity: 0;
+    color: #fff;
     animation: fadeAnimation 2s ease-in-out forwards;
 }
 
@@ -654,7 +652,22 @@ progress {
     100% {
       opacity: 1;  
     }
-  }
+}
+
+#mainTC {
+    font-size: 72px;
+    left: 70px;
+}
+
+#mainTC.mobile {
+    font-size: 36px;
+    left: 30px;
+}
+
+#mainTX.desktop {
+    font-size: 72px;
+    left: 70px;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
