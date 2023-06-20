@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="bootstrap.css" rel="stylesheet" />
+    <script src="scripts/preloadImage.js"></script>
 </head>
 
 <header>
@@ -23,6 +24,9 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="now.html">Now</a>
                     </li>
                     <li class="nav-item">
@@ -41,15 +45,15 @@
         <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
         <div class="title-image-overlay"></div>
         <div class="text-container" id="mainTC">
-            <script src="scripts/isMobileTC.js"></script>
+            <script src="scripts/isMobileHeader.js"></script>
             Resume
         </div>
     </div>
 </header>
 
 <body>
-    <div class="container" id="mainContainer">
-        <script src="scripts/isMobileContainer.js"></script>
+    <div class="container" id="bodyContainer">
+        <script src="scripts/isMobileBody.js"></script>
 
         <!--Download resume button-->
         <br>
@@ -149,8 +153,8 @@
 </body>
 
 <footer>
-    <div class="container" id="mainContainer">
-        <script src="scrirpts/isMobileContainer.js"></script>
+    <div class="container" id="footerContainer">
+        <script src="scrirpts/isMobileFooter.js"></script>
         <hr>
         <h5>Contact me</h5>
         <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>
