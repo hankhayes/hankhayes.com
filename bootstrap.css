@@ -180,22 +180,6 @@ h1-outline, .h1-outline {
     border-top: 1px solid black;
 } */
 
-hp4, .hp4 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-hp4, .hp4 {
-    font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-    hp4, .hp4 {
-        font-size: 1.5rem;
-    }
-}
-
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
@@ -728,6 +712,10 @@ progress {
 #mainTC.desktop {
     font-size: 72px;
     left: 70px;
+}
+
+.badge-container {
+    padding-bottom: 10px;
 }
 
 
