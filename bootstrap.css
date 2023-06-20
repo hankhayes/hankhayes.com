@@ -665,10 +665,11 @@ progress {
     left: 20px;
 }
 
-#mainTX.desktop {
+#mainTC.desktop {
     font-size: 72px;
     left: 70px;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -726,20 +727,36 @@ progress {
     width: 100%;
 }
 
-#mainContainer {
+#bodyContainer {
     padding-right: calc(var(--bs-gutter-x) * 3);
     padding-left: calc(var(--bs-gutter-x) * 3);
 }
 
-#mainContainer.mobile {
+#bodyContainer.mobile {
     padding-right: calc(var(--bs-gutter-x) * 1);
     padding-left: calc(var(--bs-gutter-x) * 1);
 }
 
-#mainContainer.desktop {
+#bodyContainer.desktop {
     padding-right: calc(var(--bs-gutter-x) * 3);
     padding-left: calc(var(--bs-gutter-x) * 3);
 }
+
+#footerContainer {
+    padding-right: calc(var(--bs-gutter-x) * 3);
+    padding-left: calc(var(--bs-gutter-x) * 3);
+}
+
+#footerContainer.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+}
+
+#footerContainer.desktop {
+    padding-right: calc(var(--bs-gutter-x) * 3);
+    padding-left: calc(var(--bs-gutter-x) * 3);
+}
+
 
 .row {
   --bs-gutter-x: 1.5rem;
