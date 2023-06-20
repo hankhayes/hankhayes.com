@@ -3,97 +3,117 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="bootstrap.css" rel="stylesheet" />
-    <!-- <link href="style.css" rel="stylesheet" /> -->
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+    <!--This is the code for the navbar-->
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
+            <!--This is the code for the "Home" button-->
+            <a class="navbar-brand" href="index.html">Hank Hayes</a>
 
             <!--This is the code for the "hamburger menu" button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--This is the link to the home page - you can leave this as is -->
-            <a href="index.html" class="navbar-brand">Home</a>
-
-            <!--everything in this section will collapse when the screen is small -->
-            <div class="collapse navbar-collapse" id="nav-content">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="about.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;About</a></li>
-                    <li class="nav-item"><a href="interests.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Interests</a></li>
-                    <li class="nav-item"><a href="now.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Now</a></li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link"><span class="fas fa-user"></span>&nbsp;Resume</a></li>
+            <!--This is the code for the other links that will collapse-->
+            <div class="navbar-collapse collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="now.html">Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <script src="wwwroot/lib/jquery/jquery.js"></script>
-    <script src="wwwroot/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="wwwroot/lib/jquery-validate/jquery.validate.min.js"></script>
-    <script src="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-</body>
-
-<div class="container">
-    <br>
-    <p><h1>Hank Hayes</h1></p>
-    <!-- <p class="lead mb-3">My name is Hank and I'm a junior MIS major at UT Austin's McCombs School of Business. Explore the website and get to know me better!</p> -->
-    <!-- <p>As a third-year MIS major at UT Austin, I'm exploring what I want to do post-grad. I'm currently pursuing an internship in either project management, software engineering, or consulting because I believe they align well with my interests and would foster my growth as a person. That being said, I'm incredibly open to opportunities of any kind, in any industry! My only critera is that I'm able to develop my leadership and critical thinking skills.</p> -->
-    <!-- <p>I've learned that the most important thing in searching for a job is discovering what you're most passionate about. To me, that is solving problems and meeting new people. I take a very hands-on and investigative approach to solving problems. In my most recent internship at Dell, this meant interviewing 50+ people over the course of 10 weeks to find their most common pain points surrounding the idea management process.</p> -->
-
-    <h4>The person</h4>
-    <p>Originally from El Paso, TX I moved to Austin, TX in 2020 to attend UT Austin. I've played basketball, video games , and the piano nearly my whole life, all of which have guided my interests over time.</p>
-
-    <h4>The student</h4>
-    <p>I'm a senior at The University of Texas at Austin studying at the McCombs School of Business. I'm studying Management Information Systems and getting a certificate in Computer Science.</p>
-
-    <h4>The professional</h4>
-    <p>I worked for Dell in the summer of 2022 and am currently working for LPL Financial and Apple.</p>
-
-    <h4>The entrepreneur</h4>
-    <p>An entrepreneur at heart, I'm co-directing the rebuild of the Longhorn Entrepreneurship Agency.</p>
-
-    <read-more>Read more on the <a href="about.html">About</a> page</read-more>
-    <br>
-
-    <p><h1>Projects</h1></p>
-    <h4>hankhayes.com</h4>
-    <p>This website has been my most recent project. The goal was to create a personal website for as little money as possible.</p>
-
-    <read-more>Read more on the <a href="about.html">Projects</a> page</read-more>
-    <br>
-
-    <p><h1>Now</h1></p>
-    <h4>What have I been up to recently? Check it out on the Now page</h4>
-
-
-    <div class="text-center">
-        <h2>Need inspiration?</h2>
-        <p>Watch this TED talk and walk away a new person.</p>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <div style="max-width:854px">
-                    <div style="max-width:854px">
-                        <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/-vZXgApsPCQ" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
+    
+    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
+    
+    <div class="title-image">
+        <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
+        <div class="title-image-overlay"></div>
+        <div class="text-container" id="mainTC">
+            <script src="scripts/isMobileTC.js"></script>
+            Hank Hayes
         </div>
     </div>
-</div>
+</header>
+
+<body>
+    <div class="container" id="mainContainer">
+        <script src="scripts/isMobileContainer.js"></script>
+        <!--Personal-->
+        <br>
+        <h4>The person</h4>
+        <p>Originally from El Paso, TX I moved to Austin, TX in 2020 to attend UT Austin. I'm an avid piano player, podcast listener, basketball player, and tech enthusiast.</p>
+
+        <h4>The student</h4>
+        <p>I'm a senior at The University of Texas at Austin studying at the McCombs School of Business. I'm studying Management Information Systems and getting a certificate in Computer Science.</p>
+
+        <h4>The professional</h4>
+        <p>I currently work part time for Apple, full time for LPL Financial, and worked for Dell in the summer of 2022.</p>
+
+        <h4>The entrepreneur</h4>
+        <p>An entrepreneur at heart, I'm co-directing the rebuild of the Longhorn Entrepreneurship Agency.</p>
+
+        <!--read-more is a tag I added to bootstrap.css-->
+        <p><read-more>Read more on the <a href="about.html">About</a> page</read-more></p>
+
+        <!--Projects-->
+        <br>
+        <p><h1>Projects</h1></p>
+
+        <hp4>hankhayes.com</hp4>
+        <br>
+        <span class="badge bg-info">Azure</span>
+        <span class="badge bg-info">CSS</span>
+        <span class="badge bg-info">HTML</span>
+        <p>This website! The goal was to build and host it without paying a dime.</p>
+
+        <hp4>Longhorn Recruiting</hp4>
+        <br>
+        <span class="badge bg-info">ASP.NET Core</span>
+        <span class="badge bg-info">C#</span>
+        <span class="badge bg-info">CSS</span>
+        <span class="badge bg-info">HTML</span>
+        <span class="badge bg-info">SQL</span>
+        <p>A web application that facilitates the entire job recruiting process</p>
+        
+        <hp4>The Last Wizard</hp4>
+        <br>
+        <span class="badge bg-info">GDScript</span>
+        <span class="badge bg-info">Godot Engine</span>
+        <span class="badge bg-info">Illustrator</span>
+        <p>The Last Wizard is a game that I developed with two other students as part of the CS 329E Game Development course.</p>
+
+        <p><read-more>Read more on the <a href="projects.html">Projects</a> page</read-more></p>
+
+        <!--Now-->
+        <br>
+        <p><h1>Now</h1></p>
+        <p>Check out the <a href="now.html">Now</a> page to see what I've been up to lately</p>
+    </div>
+</body>
 
 <footer>
-    <div class="container">
+    <div class="container" id="mainContainer">
+        <script src="scripts/isMobileContainer.js"></script>
         <hr>
         <h5>Contact me</h5>
         <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>
-        <br/>
+        <br>
         <a href="https://www.linkedin.com/in/hank-hayes/">LinkedIn</a>
     </div>
     <br>
