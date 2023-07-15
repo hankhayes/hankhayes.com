@@ -1,8 +1,8 @@
 // Array of phrases to be typed out
 var phrases = [
-    "This is the first phrase.",
-    "This is the second phrase.",
-    "This is the third phrase."
+    "Welcome!",
+    "My name is Hank Hayes",
+    "Take a look around!"
   ];
   
   // Delay between each character (in milliseconds)
@@ -28,7 +28,7 @@ var phrases = [
         setTimeout(function () {
           pElement.textContent = " "; // Clear the previous phrase
           typeEffect(phraseIndex + 1); // Type out the next phrase
-        }, 1000); // Delay before typing the next phrase (in milliseconds)
+        }, 1500); // Delay before typing the next phrase (in milliseconds)
       }
     }, delay);
   }

@@ -4,123 +4,28 @@
     <meta name="viewport" content="width=device-width" />
     <link href="bootstrap.css" rel="stylesheet" />
     <script src="scripts/preloadImage.js"></script>
+    <img src="images/tower.jpeg" style="opacity: 25%; position: absolute; width: 100%; height: 100%; object-fit: cover;">
+    <style>
+        #typing-effect {
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            margin-bottom: 250px;
+        }
+    </style>
 </head>
 
-<header>
-    <!--This is the code for the navbar-->
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-        <div class="container-fluid">
-            <!--This is the code for the "Home" button-->
-            <a class="navbar-brand" href="index.html">Hank Hayes</a>
-
-            <!--This is the code for the "hamburger menu" button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--This is the code for the other links that will collapse-->
-            <div class="navbar-collapse collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="now.html">Now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                </ul>
-            </div>
+<body style="position: relative;">
+    <div style="align-items: center; display: flex; justify-content: center; margin: 0 auto; height: 100vh;">
+        <div class="home-container">
+            <p id="typing-effect"></p>
+            <script src="scripts/homeMessage.js"></script>
+            <h1-outline>Hank Hayes</h1-outline>   
+            <a class="home-link" href="about.html">About</a>
+            <a class="home-link" href="projects.html">Projects</a>
+            <a class="home-link" href="now.html">Now</a>
+            <a class="home-link" href="resume.html">Resume</a>
+            <a class="home-link" href="contact.html">Contact</a>
         </div>
-    </nav>
-    
-    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
-    
-    <div class="title-image">
-        <img src="images/austin.jpeg" style="height: 300px; object-fit: cover;">
-        <div class="title-image-overlay"></div>
-        <div class="text-container" id="mainTC">
-            <script src="scripts/isMobileHeader.js"></script>
-            Hank Hayes
-        </div>
-    </div>
-</header>
-
-<body>
-    <div class="container" id="bodyContainer">
-        <script src="scripts/isMobileBody.js"></script>
-        <!--Personal-->
-        <br>
-        <h4>The person</h4>
-        <p>Originally from El Paso, TX I moved to Austin, TX in 2020 to attend UT Austin. I'm an avid piano player, podcast listener, basketball player, and tech enthusiast.</p>
-
-        <h4>The student</h4>
-        <p>I'm a senior at The University of Texas at Austin studying at the McCombs School of Business. I'm studying Management Information Systems and getting a certificate in Computer Science.</p>
-
-        <h4>The professional</h4>
-        <p>I currently work part time for Apple, full time for LPL Financial, and worked for Dell in the summer of 2022.</p>
-
-        <h4>The entrepreneur</h4>
-        <p>An entrepreneur at heart, I'm co-directing the rebuild of the Longhorn Entrepreneurship Agency.</p>
-
-        <!--read-more is a tag I added to bootstrap.css-->
-        <!-- <p><read-more>Read more on the <a href="about.html">About</a> page</read-more></p> -->
-
-        <!--Projects-->
-        <br>
-        <p><h1-outline>Projects</h1-outline></p>
-
-        <h4>hankhayes.com</h4>
-        <div class="badge-container">
-            <span class="badge bg-info">Azure</span>
-            <span class="badge bg-info">CSS</span>
-            <span class="badge bg-info">HTML</span>
-            <span class="badge bg-info">Javascript</span>
-        </div>
-        <p>This website! The goal was to build and host it without paying a dime.</p>
-
-        <h4>Longhorn Recruiting</h4>
-        <div class="badge-container">
-            <span class="badge bg-info">ASP.NET Core</span>
-            <span class="badge bg-info">C#</span>
-            <span class="badge bg-info">CSS</span>
-            <span class="badge bg-info">HTML</span>
-            <span class="badge bg-info">SQL</span>
-        </div>
-        <p>A web application that facilitates the entire job recruiting process</p>
-        
-        <h4>The Last Wizard</h4>
-        <div class="badge-container">
-            <span class="badge bg-info">GDScript</span>
-            <span class="badge bg-info">Godot Engine</span>
-            <span class="badge bg-info">Illustrator</span>
-        </div>
-        <p>The Last Wizard is a game that I developed with two other students as part of the CS 329E Game Development course.</p>
-
-        <p><read-more>Read more on the <a href="projects.html">Projects</a> page</read-more></p>
-
-        <!--Now-->
-        <br>
-        <p><h1-outline>Now</h1-outline></p>
-        <p>Check out the <a href="now.html">Now</a> page to see what I've been up to lately</p>
     </div>
 </body>
-
-<footer>
-    <div class="container" id="footerContainer">
-        <script src="scripts/isMobileFooter.js"></script>
-        <hr>
-        <h5>Contact me</h5>
-        <a href="mailto:mail@hankhayes.com">mail@hankhayes.com</a>
-        <br>
-        <a href="https://www.linkedin.com/in/hank-hayes/">LinkedIn</a>
-    </div>
-    <br>
-</footer>
